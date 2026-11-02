@@ -1,0 +1,19 @@
+{
+  "name": "jupiter",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Jupiter: your own private music player and library, with playlists, offline downloads and listening stats.",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "start": "node http/server.js",
+    "dev": "node --watch http/server.js",
+    "test": "node --test \"tests/*.test.js\"",
+    "export": "node scripts/export-data.js",
+    "import": "node scripts/import-data.js",
+    "build": "node scripts/build-static.js"
+  },
+  "dependencies": {}
+}

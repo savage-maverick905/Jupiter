@@ -1,0 +1,38 @@
+{
+  "manifestVersion": 1,
+  "id": "jupiter",
+  "name": "Jupiter",
+  "version": "1.2.0",
+  "description": "Jupiter is your own music player: upload the music you own, keep it in your private storage, build playlists, download tracks for offline, see what you listen to.",
+  "icon": "music",
+  "entry": "index.html",
+  "permissions": [
+    "jupiter.library.read",
+    "jupiter.library.write",
+    "jupiter.library.delete",
+    "jupiter.stats.read",
+    "jupiter.admin.maintain"
+  ],
+  "defaultRolePermissions": {
+    "admin": [
+      "jupiter.library.read",
+      "jupiter.library.write",
+      "jupiter.library.delete",
+      "jupiter.stats.read",
+      "jupiter.admin.maintain"
+    ],
+    "member": [
+      "jupiter.library.read",
+      "jupiter.library.write",
+      "jupiter.library.delete",
+      "jupiter.stats.read"
+    ]
+  },
+  "dataResources": [
+    "jupiter_tracks",
+    "jupiter_playlists",
+    "jupiter_albums",
+    "jupiter_artists",
+    "jupiter_settings"
+  ]
+}
